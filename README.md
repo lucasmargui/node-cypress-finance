@@ -53,6 +53,22 @@ Select an element on the screen we want to interact with using a feature called 
 
 ### Create an auxiliary function
 
+- Test Setup: Auxiliary functions help in setting up the test environment by performing tasks like logging in, seeding the database, or navigating to a specific page before each test.
+
+- Reusable Actions: They encapsulate repetitive actions, such as clicking a button, filling out a form, or selecting an item from a dropdown menu, into reusable functions. This promotes code reusability and reduces duplication across tests.
+
+- Assertions and Expectations: Auxiliary functions can be used to define custom assertions or expectations tailored to the application's specific requirements. These assertions enhance test clarity and help in accurately verifying the expected behavior of the application.
+
+- Data Management: They assist in managing test data by generating mock data, cleaning up test artifacts, or resetting the application state between tests. This ensures test independence and reliability.
+
+- Error Handling: Auxiliary functions can handle errors gracefully by implementing retry mechanisms, logging errors, or executing fallback actions to maintain test stability and robustness.
+
+- Abstraction of Complex Interactions: For complex interactions such as drag-and-drop or multi-step workflows, auxiliary functions abstract away the complexity, making tests more readable and maintainable.
+
+- Custom Commands: Cypress allows defining custom commands using auxiliary functions, enabling the extension of Cypress's functionality to better fit the testing needs of the application.
+
+- Performance Optimization: They can optimize test performance by implementing strategies such as batching requests, parallelizing test execution, or minimizing DOM interactions.
+
 <div align="center">
  <img src="https://github.com/lucasmargui/Node_Cypress_Finance/assets/157809964/79be4b43-25e1-4293-b6c8-c4fc6a3f6ea8" style="width:70%">
  </div>
@@ -60,8 +76,25 @@ Select an element on the screen we want to interact with using a feature called 
 
 ### Assertions
 
+- Chaining: Cypress assertions use a chaining syntax, allowing multiple assertions to be sequentially applied to the same subject. This makes it easy to express complex verification logic succinctly.
 
-Assertion that contains a certain value after it has been added
+- Readability: Assertions in Cypress are designed to be human-readable, enhancing the clarity of test code and making it easier to understand the test's purpose and expected outcomes.
+
+- BDD Syntax: Cypress assertions follow the Behavior-Driven Development (BDD) syntax, employing natural language constructs like expect, should, and assert to articulate test expectations in a descriptive manner.
+
+- Automatic Retry: Cypress automatically retries assertions until the specified condition is met or the timeout is reached. This built-in retry mechanism reduces flakiness in tests caused by asynchronous behavior or transient UI states.
+
+- Built-in Matchers: Cypress provides a rich set of built-in matchers for common assertions such as equality, containment, visibility, and element attributes. These matchers cover a wide range of verification scenarios without requiring additional configuration.
+
+- Custom Assertions: Developers can define custom assertions using Cypress's API, allowing them to encapsulate domain-specific validation logic or complex verification criteria into reusable functions.
+
+- Snapshot Testing: Cypress supports snapshot testing, enabling comparison of the current state of UI elements or application data against previously captured snapshots. This facilitates regression testing and ensures consistency across releases.
+
+- Error Messaging: When an assertion fails, Cypress provides detailed error messages and stack traces, aiding in debugging and identifying the root cause of test failures quickly.
+
+- Integration with Test Runners: Assertions in Cypress seamlessly integrate with popular test runners like Mocha or Jasmine, enabling developers to leverage familiar testing frameworks and conventions.
+
+- Extensibility: Cypress's assertion library is extensible, allowing developers to integrate third-party assertion libraries or plugins to extend the capabilities of Cypress assertions as per project requirements.
 
 <div align="center">
 
