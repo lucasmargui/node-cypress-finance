@@ -1,5 +1,8 @@
 
-# Getting Start
+# Node + Cypress
+
+This example shows how to use cypress in a Finance website.
+
 
 Initialize a Node project
 
